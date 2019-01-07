@@ -14,9 +14,9 @@ class db_connections(object):
 
 
     mydb = mysql.connector.connect(
-        host="VSWCENTRAXX02",
-        user="sa_zpm_read_all",
-        passwd="pI1UL6x&"
+        host="VSWZPM01",
+        user="usercompare",
+        passwd="compareTo"
         )
 
     print(mydb)
@@ -28,7 +28,7 @@ class db_connections(object):
     for x in mycursor:
       print(x)
       
-    mycursor.execute("SELECT TOP 10 * FROM current_patient_data")  
+    mycursor.execute("SELECT TOP 10 * FROM patient")  
     
     '''print(mycursor[65])'''
     

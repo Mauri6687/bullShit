@@ -5,8 +5,8 @@ Created on 13.12.2018
 '''
 import http.server
 import socketserver
-from bwHC import rest_API
-rest_API
+
+
 
 PORT = 80
 
