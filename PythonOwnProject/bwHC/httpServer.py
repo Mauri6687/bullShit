@@ -6,8 +6,6 @@ Created on 13.12.2018
 import http.server
 import socketserver
 
-
-
 PORT = 80
 
 Handler = http.server.SimpleHTTPRequestHandler
