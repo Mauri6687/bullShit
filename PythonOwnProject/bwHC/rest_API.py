@@ -4,32 +4,51 @@ Created on 07.01.2019
 @author: IMMaurC1
 
 '''
-import bwHC.db_connections as db
+import bwHC.rest_DB as rest_db
+import base64
 
 from flask import Flask
 from flask.globals import request
 
 
+
+    
 app = Flask(__name__)
+
+# @app.route('/')
+# def headerRead():
+#     print(request.headers)
+#     print(request.headers['User-Agent'])
+#     print("##########Authorization#############")
+#     print(request.headers['Authorization'])
+#     return "well done header could read"
+
 
 @app.route('/rest')
 def rest():
-    return "Rest API is here"
+    return "The rest API from the ZPM is alive"
 
-
-@app.route('/zpm')
-def zpm():
-    return "ZPM is here"
-
-@app.route('/user/<string:username>', methods=['GET'])
-def user(username):
-    return "ZPM is here and you are "+username
-
-@app.route('/patient/mpi=<string:mpi>', methods=['GET'])
+@app.route('/patient/mpi=<string:mpi>', methods=['GET', 'POST'])
 def patient(mpi):
-    output = db.db_connections.getPatient((str(mpi)))        
-    return str(output)
-
-
-if __name__ == '__main__':
-    app.run(host='10.231.37.198', port=80)
+    try:
+        authorization = request.headers['Authorization']
+        
+    except Exception as e:
+        e = "no valid authentification"
+        return e
+        
+    if len(request.headers['Authorization']) >= 1:
+        authorization = str(request.headers['Authorization'])
+    else:
+        authorization = " "
+    
+    
+    #print(rest_db.check_authen(authorization))
+    if rest_db.check_authen(str(authorization)) == 1:
+        output = rest_db.getPatient(mpi)
+        return  output
+    else:        
+        return "no valid authentification" 
+     
+# if __name__ == '__main__':
+#     app.run(host='10.231.37.198', port=5455)
