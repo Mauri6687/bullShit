@@ -3,16 +3,18 @@ Created on 23.04.2019
 
 @author: IMMaurC1
 '''
-
-import bwHC.myconnutils
+import trunk.PythonOwnProject.bwHC.myconnutils as myconnutils
 import pymysql.cursors  
+
+# import bwHC.myconnutils
+# import pymysql.cursors  
  
 # Mit der Datenbank verbinden.
 
  
  
 def getPatient(mpi):
-    connection = bwHC.myconnutils.getConnection()
+    connection = myconnutils.getConnection()
     try:
         cursor = connection.cursor()        
            
@@ -37,7 +39,7 @@ def getPatient(mpi):
    
         
 def check_authen(hashCode):
-    connection = bwHC.myconnutils.getConnection()
+    connection = myconnutils.getConnection()
     #print("HashCode?????  --- > "+hashCode)
     try:
         cursor = connection.cursor()
@@ -65,7 +67,7 @@ def check_authen(hashCode):
         
     
 def bwHC_data(searchValues):
-    connection = bwHC.myconnutils.getConnection()
+    connection = myconnutils.getConnection()
     try:
         cursor = connection.cursor()        
            
