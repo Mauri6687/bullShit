@@ -1,5 +1,3 @@
-# Example Package
+# Full REST API for bwHC
 
-This is a simple example package. You can use
-[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+You can use that for rest testing in your own development system.
