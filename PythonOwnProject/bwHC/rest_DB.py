@@ -3,7 +3,10 @@ Created on 23.04.2019
 
 @author: IMMaurC1
 '''
-import trunk.PythonOwnProject.bwHC.myconnutils as myconnutils
+
+import myconnutils as myconnutils
+
+#import trunk.PythonOwnProject.bwHC.myconnutils as myconnutils
 import pymysql.cursors  
 
 # import bwHC.myconnutils

@@ -5,7 +5,9 @@ Created on 07.01.2019
 
 '''
 
-import trunk.PythonOwnProject.bwHC.rest_DB as rest_db
+import rest_DB as rest_db
+
+#import trunk.PythonOwnProject.bwHC.rest_DB as rest_db
 
 #import bwHC.rest_DB as rest_db
 import base64
@@ -48,7 +50,11 @@ def patient(mpi):
     
     #print(rest_db.check_authen(authorization))
     if rest_db.check_authen(str(authorization)) == 1:
-        output = rest_db.getPatient(mpi)
+        try:
+            output = rest_db.getPatient(mpi)
+        except Exception as e:
+            e = "no valid mpi"
+            return e    
         return  output
     else:        
         return "no valid authentification" 
