@@ -4,9 +4,10 @@ Created on 15.04.2019
 @author: IMMaurC1
 '''
 
+import trunk.PythonOwnProject.bwHC.rest_API as rest_api 
 
-import bwHC.rest_API as rest_api
-import bwHC.rest_DB as rest_db
+#bwHC.rest_API as rest_api
+#import bwHC.rest_DB as rest_db
 
 
 from basicauth import encode

@@ -4,7 +4,10 @@ Created on 07.01.2019
 @author: IMMaurC1
 
 '''
-import bwHC.rest_DB as rest_db
+
+import trunk.PythonOwnProject.bwHC.rest_DB as rest_db
+
+#import bwHC.rest_DB as rest_db
 import base64
 
 from flask import Flask
