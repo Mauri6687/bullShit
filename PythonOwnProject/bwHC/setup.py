@@ -20,7 +20,21 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: UKT License",
         "Operating System :: OS Independent",
     ],
+        install_requires = [
+            'basicauth',
+            'Click',
+            'dbhelpers',
+            'Flask',
+            'httplib2',
+            'itsdangerous',
+            'Jinja2',
+            'MarkupSafe',
+            'pipdeptree',
+            'PyMySQL',
+            'six',
+            'Werkzeug'
+            ]
 )
