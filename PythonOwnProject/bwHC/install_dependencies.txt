@@ -1,0 +1,11 @@
+Dafür sorge tragen, das Python installiert ist.
+In cmd
+
+Mit dem befehl  ====> "pip download -r requirements.txt" werden alle benötigen abhängigkeiten runtergeladen, ausführung des Befehls innerhalb des Projektes.
+
+Die Abhängigkeiten in ein Verzeichnis ablegen.
+Gesamtes Projekt auf Zielsystem kopieren.
+
+Innerhalb des Projektes folgenden befehl ausführen   ====> "pip install --no-index --find-links /path/to/download/dir/ -r /path/to/requirements.txt" 
+
+Anschließen mit C:\Python\python main.py programm ausführen...
