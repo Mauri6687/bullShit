@@ -3,7 +3,7 @@ Created on 24.04.2019
 
 @author: IMMaurC1
 '''
-from setuptools import setup, find_packages 
+import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -36,5 +36,8 @@ setuptools.setup(
             'PyMySQL',
             'six',
             'Werkzeug'
+            ],
+            setup_requires=[
+                'setuptools>=38.6.'
             ]
 )
