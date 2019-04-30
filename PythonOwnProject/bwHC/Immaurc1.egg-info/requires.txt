@@ -1,0 +1,12 @@
+basicauth
+Click
+dbhelpers
+Flask
+httplib2
+itsdangerous
+Jinja2
+MarkupSafe
+pipdeptree
+PyMySQL
+six
+Werkzeug

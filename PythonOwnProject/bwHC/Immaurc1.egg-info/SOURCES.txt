@@ -3,4 +3,5 @@ setup.py
 Immaurc1.egg-info/PKG-INFO
 Immaurc1.egg-info/SOURCES.txt
 Immaurc1.egg-info/dependency_links.txt
+Immaurc1.egg-info/requires.txt
 Immaurc1.egg-info/top_level.txt

@@ -6,13 +6,12 @@ Home-page: https://github.com/Mauri6687/bullShit.git
 Author: Calogero Maurici
 Author-email: calogero.maurici@med.uni-tuebingen.de
 License: UNKNOWN
-Description: # Example Package
+Description: # Full REST API for bwHC
         
-        This is a simple example package. You can use
-        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-        to write your content.
+        You can use that for rest testing in your own development system.
+        
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: UKT License
 Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
