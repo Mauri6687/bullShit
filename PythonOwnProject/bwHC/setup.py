@@ -3,14 +3,14 @@ Created on 24.04.2019
 
 @author: IMMaurC1
 '''
-import setuptools
+from setuptools import setup, find_packages 
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="Immaurc1",
-    version="0.0.1",
+    version="0.0.2",
     author="Calogero Maurici",
     author_email="calogero.maurici@med.uni-tuebingen.de",
     description="A restfull package for bwHC",
