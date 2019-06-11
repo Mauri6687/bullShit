@@ -36,13 +36,9 @@ def basicAuth(username, password, hash):
 
 
 def main():
-    rest_api.app.run(host='10.231.37.198', port=5455)
-    
+    rest_api.app.run(host='localhost', port=5455)
     #rest_db.getPatient('5860837')
     #rest_db.check_authen('TVRCX0FkbWluOk1UQl9BZG1pbg==')
-    
-   
-
 
 if __name__ == '__main__':
     main()
